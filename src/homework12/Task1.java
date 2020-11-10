@@ -44,18 +44,4 @@ public class Task1 {
         System.out.println(list);
 
     }
-    /*public static class HeavyBox{
-        private int weight;
-
-        public HeavyBox(int weight) {
-            this.weight = weight;
-        }
-
-        @Override
-        public String toString() {
-            return "HeavyBox{" +
-                    "weight=" + weight +
-                    '}';
-        }
-    }*/
 }
