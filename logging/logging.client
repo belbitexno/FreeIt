@@ -1,0 +1,24 @@
+
+2021-01-29 20:51:30,957 INFO  - Program is being begun
+2021-01-29 20:51:31,291 ERROR - There is no client with this id or id must be more zero
+2021-01-29 20:51:31,368 INFO  - Found client's name by email Alex: 
+2021-01-29 20:51:31,435 INFO  - Program has finished
+2021-01-29 20:53:05,765 INFO  - Program is being begun
+2021-01-29 20:53:05,998 INFO  - Found client's product by id 2: ball
+2021-01-29 20:53:05,998 INFO  - Found client's product by id 2: rocket
+2021-01-29 20:53:05,999 INFO  - Found client's product by id 2: phone
+2021-01-29 20:53:05,999 INFO  - Found client's product by id 2: pen
+2021-01-29 20:53:06,029 INFO  - Found client's name by email Alex: 
+2021-01-29 20:53:06,095 INFO  - Program has finished
+2021-01-29 20:53:24,751 INFO  - Program is being begun
+2021-01-29 20:53:25,370 INFO  - Found client's product by id 2: ball
+2021-01-29 20:53:25,374 INFO  - Found client's product by id 2: rocket
+2021-01-29 20:53:25,375 INFO  - Found client's product by id 2: phone
+2021-01-29 20:53:25,376 INFO  - Found client's product by id 2: pen
+2021-01-29 20:53:25,457 INFO  - Found client's name by email Alex: 
+2021-01-29 20:53:25,473 INFO  - Program has finished
+2021-01-29 20:53:54,105 INFO  - Program is being begun
+2021-01-29 20:53:54,446 INFO  - Found client's product by id 3: ball
+2021-01-29 20:53:54,446 INFO  - Found client's product by id 3: rocket
+2021-01-29 20:53:54,561 INFO  - Found client's name by email Alex: 
+2021-01-29 20:53:54,599 INFO  - Program has finished
