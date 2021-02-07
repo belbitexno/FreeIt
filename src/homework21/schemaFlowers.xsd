@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:simpleType name="soil">
+       <xsd:restriction base="xsd:string">
+           <xsd:enumeration value="ground"/>
+           <xsd:enumeration value="podzolic"/>
+           <xsd:enumeration value="sod-podzolic"/>
+       </xsd:restriction>
+   </xsd:simpleType>
+
+    <xsd:simpleType name = "parametersMiddleSize">
+        <xsd:restriction base="xsd:double">
+            <xsd:minInclusive value="40"/>
+            <xsd:maxInclusive value="50"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="parameters">
+        <xsd:sequence>
+            <xsd:element name="colorStalk" type="xsd:string"/>
+            <xsd:element name="colorLeaves" type="xsd:string"/>
+            <xsd:element name="middleSize" type="parametersMiddleSize"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="temperature">
+        <xsd:restriction base="xsd:double">
+            <xsd:minInclusive value="15"/>
+            <xsd:maxInclusive value="30"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="lighting">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="light-loving"/>
+            <xsd:pattern value="non-light-loving"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="growingTips">
+        <xsd:sequence>
+            <xsd:element name="temperature" type="temperature"/>
+            <xsd:element name="lighting" type="lighting"/>
+            <xsd:element name="watering" type="xsd:double"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="multiplying">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="leaves"/>
+            <xsd:enumeration value="stalk"/>
+            <xsd:enumeration value="seed"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:complexType name="flower">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="soil" type="soil"/>
+            <xsd:element name="origin" type="xsd:string"/>
+            <xsd:element name="visualParameters" type="parameters"/>
+            <xsd:element name="growingTips" type="growingTips"/>
+            <xsd:element name="multiplying" type="multiplying"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+
+
+    <xsd:element name="flowers">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="flower" type="flower"
+                             minOccurs="2" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

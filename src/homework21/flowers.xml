@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<flowers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemaFlowers.xsd">
+    <flower>
+        <name>rosa</name>
+    <soil>ground</soil>
+    <origin>Minsk</origin>
+    <visualParameters>
+        <colorStalk>green</colorStalk>
+        <colorLeaves>green</colorLeaves>
+        <middleSize>50.0</middleSize>
+    </visualParameters>
+    <growingTips>
+        <temperature>30.0</temperature>
+        <lighting>light-loving</lighting>
+        <watering>100</watering>
+    </growingTips>
+    <multiplying>seed</multiplying>
+</flower>
+    <flower>
+        <name>tulip</name>
+        <soil>ground</soil>
+        <origin>Holland</origin>
+        <visualParameters>
+            <colorStalk>green</colorStalk>
+            <colorLeaves>green</colorLeaves>
+            <middleSize>40</middleSize>
+        </visualParameters>
+        <growingTips>
+            <temperature>20</temperature>
+            <lighting>light-loving</lighting>
+            <watering>90</watering>
+        </growingTips>
+        <multiplying>leaves</multiplying>
+    </flower>
+</flowers>
